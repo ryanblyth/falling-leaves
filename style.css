@@ -1,8 +1,17 @@
-body {background: #222;}
+body {
+  position: relative;
+  background: #222;
+}
 
 /* leaf animations */
 
-#leaves {position:relative;top:-50px;width:100%;text-align: right;}
+#leaves {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 50%;
+  text-align: left;
+}
 
 #leaves i {
     display: inline-block;
@@ -93,46 +102,46 @@ body {background: #222;}
 
 @-webkit-keyframes falling {
     
-    0% {
-        -webkit-transform:
-            translate3d(300,0,0)
-            rotate(0deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-350px,700px,0)
-            rotate(90deg);
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes falling3 {
-     0% {
-        -webkit-transform:
-            translate3d(0,0,0)
-            rotate(-20deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-230px,640px,0)
-            rotate(-70deg);
-        opacity: 0;
-    }
+  0% {
+      transform:
+          translate3d(0vw,0,0)
+          rotate(0deg);
+  }
+  
+  100% {
+      transform:
+          translate3d(30vw,75vh,0)
+          rotate(90deg);
+      opacity: 0;
+  }
 }
 
 @-webkit-keyframes falling2 {
-     0% {
-        -webkit-transform:
-            translate3d(0,0,0)
-            rotate(90deg);
-    }
-    
-    100% {
-        -webkit-transform:
-            translate3d(-400px,680px,0)
-            rotate(0deg);
-        opacity: 0;
-    }
+0% {
+   transform:
+       translate3d(10vw,0,0)
+       rotate(90deg);
+}
+
+100% {
+   transform:
+       translate3d(20vw,90vh,0)
+       rotate(0deg);
+   opacity: 0;
+}
+}
+
+@-webkit-keyframes falling3 {
+   0% {
+      transform:
+          translate3d(0vw,0,0)
+          rotate(-20deg);
+  }
+  
+  100% {
+      transform:
+          translate3d(30vw,66vh,0)
+          rotate(-70deg);
+      opacity: 0;
+  }
 }
